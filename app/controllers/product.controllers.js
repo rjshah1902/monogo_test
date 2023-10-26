@@ -14,6 +14,7 @@ exports.getAll = async (req, res) => {
     // const data = Products.find();
 
     // console.log("Final Response " + data);
+
     Products.find().then(data => {
         res.send(data);
     })
